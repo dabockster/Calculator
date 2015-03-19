@@ -3,7 +3,7 @@
 //  Calculator
 //
 //  Created by admin on 3/11/15.
-//  Copyright (c) 2015 Matt D. All rights reserved.
+//  Copyright (c) 2015 PLU CS Club All rights reserved.
 //
 
 import UIKit

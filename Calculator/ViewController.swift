@@ -3,7 +3,7 @@
 //  Calculator
 //
 //  Created by admin on 3/11/15.
-//  Copyright (c) 2015 Matt D. All rights reserved.
+//  Copyright (c) 2015 PLU CS Club All rights reserved.
 //
 
 import UIKit
@@ -13,6 +13,22 @@ class ViewController: UIViewController
     @IBOutlet weak var displayLabel: UILabel!
     
     var userIsInTheMiddleOfTypingANumber:Bool=false
+    
+    var operandStack = Array<Double>()
+    
+//    @IBAction func returnKey() {
+//        operandStack.append(displayLabel.text!)
+//    }
+    
+    var displayValue: Double{
+        get{
+            displayLabel.text = "\(newValue)"
+            userIsInTheMiddleOfTypingANumber = false;
+        }
+        
+        set{
+            return NSNumberFormatter().numberFromString(displayLabel!).doubleValue
+        }
     
     @IBAction func appendDigit(sender: UIButton)
     {   //let means const
